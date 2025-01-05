@@ -22,4 +22,5 @@
     "files.autoSaveWhenNoErrors": true,
     "files.autoSaveWorkspaceFilesOnly": true,
     "search.useGlobalIgnoreFiles": false,
+    "editor.formatOnType": true,
 }
