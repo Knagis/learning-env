@@ -6,6 +6,7 @@
     "editor.suggest.showSnippets": true,
     "files.autoSave": "afterDelay",
     "files.exclude": {
+        ".gitignore": true,
         ".vscode": true,
         "**/tsconfig.json": true,
         "core": true,
