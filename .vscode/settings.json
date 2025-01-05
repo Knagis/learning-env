@@ -1,0 +1,24 @@
+{
+    "typescript.suggest.enabled": true,
+    "editor.snippetSuggestions": "none",
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showDeprecated": false,
+    "editor.suggest.showSnippets": true,
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        ".vscode": true,
+        "**/tsconfig.json": true,
+        "core": true,
+        "index.html": true,
+        "lib": true,
+        "node_modules": true,
+        "package.json": true,
+        "readme.md": true,
+        "vite.config.ts": true,
+        "yarn.lock": true
+    },
+    "files.autoSaveDelay": 1000,
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "search.useGlobalIgnoreFiles": false,
+}

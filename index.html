@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                overflow: hidden;
+                overflow: clip;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            canvas {
+            }
+            #sidebar {
+                user-select: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 200px;
+                background: #eeeeee;
+                border-left: 1px solid gray;
+                opacity: 0.7;
+            }
+            #sidebar:hover {
+                opacity: 0.9;
+            }
+            #sidebar a {
+                padding-left: 3px;
+                display: block;
+                cursor: pointer;
+            }
+            #sidebar a.selected {
+                background-color: #09c;
+            }
+            #hang-popup {
+                position: absolute;
+                bottom: 10vh;
+                left: 10vh;
+                max-width: 40vw;
+                border: 1px solid darkred;
+                background-color: red;
+                opacity: 0.8;
+                padding: 10px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="4096" height="4096"></canvas>
+        <div id="sidebar"></div>
+        <div id="hang-popup">
+            <!-- text explaining that the program hanged (likely due to infinite cycle) -->
+            Programmas kods "iesprūda". Visbiežāk tam iemesls ir pārāk garš vai bezgalīgs cikls.
+            Izlabo kodu un mēģini pārlādēt lapu.
+            <button onclick="location.reload()">Pārlādēt</button>
+        </div>
+        <script src="./core/index.ts" type="module"></script>
+    </body>
+</html>
